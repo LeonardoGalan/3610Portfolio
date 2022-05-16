@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <body> 
+    <a href="../index.html">Portfolio</a>  
+  <script type="text/javascript">
+  window.onload = function () {
+    var chart = new CanvasJS.Chart("chartContainer",
+    {
+      title:{ 
+      },
+      legend: {
+        verticalAlign: "bottom",
+        horizontalAlign: "center"
+      },
+      data: [
+      {        
+        type: "column",  
+        legendText: "Fruits",
+        dataPoints: [      
+        { x: 1, y: 20, label: "Apple", color: "red"},
+        { x: 2, y: 10,  label: "Orange", color: "orange" },
+        { x: 3, y: 15,  label: "Banana", color: "yellow"},
+        { x: 4, y: 3,  label: "Kiwi", color: "green"},
+        { x: 5, y: 5,  label: "Blueberry", color: "blue"},
+        { x: 6, y: 8, label: "Grapes", color: "purple"},
+        ]
+      }
+      ]
+    });
+
+    chart.render();
+  }
+  </script>
+  <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script></head>
+  <body>
+    <div id="chartContainer" style="height: 300px; width: 100%;">
+    </div>
+  </body>
+  </html>
